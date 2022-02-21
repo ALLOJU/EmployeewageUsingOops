@@ -3,7 +3,7 @@ package com.bridgelabz;
 public class EmpWageCalcUC5 {
 
 	final static int emp_rate_per_hour=20;
-	final static int num_working_days=30;
+	final static int num_working_days=20;
 
 	//Method to Generate Random NUmber
 	private static int getRandomNumber(int emp) {
@@ -14,13 +14,13 @@ public class EmpWageCalcUC5 {
 
 	}
 
-	private static void calculateDailyWageUsingSwitch(int fulltime, int parttime) {
+	private static void calculateMonthlyWageUsingSwitch(int fulltime, int parttime) {
 
 		int empCheck=0;
 		int empHrs=0;
 		int empWage=0;
 		int monthlyempWage=0;
-		for(int day=1;day<=num_working_days;day++) {
+		for(int day=1;day<=30;day++) {
 			empCheck=getRandomNumber(empCheck);
 			//System.out.println(empCheck);
 			switch (empCheck){    
@@ -58,7 +58,7 @@ public class EmpWageCalcUC5 {
 		getRandomNumber(empCheck);
 		//here calculateDailyWage() method can be used as method overloading
 		//calculateDailyWage(is_fulltime);
-		calculateDailyWageUsingSwitch(parttime,fulltime);
+		calculateMonthlyWageUsingSwitch(parttime,fulltime);
 
 	}
 
