@@ -14,7 +14,7 @@ public class EmpWageCalcUC6{
 
 	}
 
-	private static void calculateMonthlyWageUsingSwitch(int full_time, int parttime) {
+	private static void calculateMonthlyWageUsingWhile(int full_time, int parttime) {
 
 		int empCheck=0;
 		int empHrs=0;
@@ -63,7 +63,7 @@ public class EmpWageCalcUC6{
 		getRandomNumber(empCheck);
 		//here calculateDailyWage() method can be used as method overloading
 		//calculateDailyWage(is_fulltime);
-		calculateMonthlyWageUsingSwitch(parttime,fulltime);
+		calculateMonthlyWageUsingWhile(parttime,fulltime);
 
 	}
 
